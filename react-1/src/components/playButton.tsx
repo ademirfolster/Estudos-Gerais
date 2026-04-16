@@ -17,9 +17,6 @@ export function PlayButton({ label, onClick }: playButtonProps) {
         cursor: "pointer",
         fontWeight: "bold",
         textTransform: "uppercase",
-        display: "flex",
-        flexDirection: "column",
-        gap: "30px",
       }}
     >
       {label}

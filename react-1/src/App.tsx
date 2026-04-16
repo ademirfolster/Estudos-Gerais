@@ -41,7 +41,6 @@ export default function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "50px",
         justifyContent: "center",
         gap: "30px",
         height: "100vh",
