@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #820ad1;
+  --purple-dark: #6b07b0;
+  --white: #ffffff;
+  --dark: #0b0014;
+  --gray-text: #6b6b6b;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
