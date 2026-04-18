@@ -1,6 +1,6 @@
-import { useState, useRef } from 'react';
-import champions from '../data/league.json';
-import { Form, Input, Button, Typography, Card, Space } from 'antd';
+import { useState, useRef } from "react";
+import champions from "../data/league.json";
+import { Form, Input, Button, Typography, Card, Space } from "antd";
 
 const { Title, Text } = Typography;
 
@@ -21,7 +21,7 @@ type Game = {
 const random = (arr: Game[]): Game =>
   arr[Math.floor(Math.random() * arr.length)];
 
-export default function Game ({ jogar }: { jogar: (v: boolean) => void }) {
+export default function Game({ jogar }: { jogar: (v: boolean) => void }) {
   const [form] = Form.useForm();
 
   const initialTentativas = 5;
@@ -73,16 +73,16 @@ export default function Game ({ jogar }: { jogar: (v: boolean) => void }) {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: 40 }}>
+    <div className="flex justify-center mt-10">
       <Form
         form={form}
         layout="vertical"
         onFinish={onFinish}
         style={{ width: 400 }}
       >
-        <Card style={{ borderRadius: 12 }}>
-          <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-            <Title level={3} style={{ textAlign: 'center' }}>
+        <Card className="rounded-xl">
+          <Space direction="vertical" size="middle" className="w-full">
+            <Title level={3} style={{ textAlign: "center" }}>
               Adivinhe o campeão
             </Title>
 
@@ -95,7 +95,7 @@ export default function Game ({ jogar }: { jogar: (v: boolean) => void }) {
             <Form.Item
               label="Sua resposta"
               name="user"
-              rules={[{ required: true, message: 'Digite uma resposta!' }]}
+              rules={[{ required: true, message: "Digite uma resposta!" }]}
             >
               <Input
                 placeholder="Ex: Ahri..."
@@ -117,28 +117,19 @@ export default function Game ({ jogar }: { jogar: (v: boolean) => void }) {
               </Button>
 
               {win === true && (
-                <Text
-                  type="success"
-                  style={{ display: 'block', textAlign: 'center', marginTop: 10 }}
-                >
+                <Text type="success" className="block items-center mt-2.5">
                   Parabens, Você Acertou!
                 </Text>
               )}
 
               {win === false && tentativas > 0 && (
-                <Text
-                  type="warning"
-                  style={{ display: 'block', textAlign: 'center', marginTop: 10 }}
-                >
+                <Text type="warning" className="block text-center mt-2.5">
                   Errou, tenta de novo
                 </Text>
               )}
 
               {win === false && tentativas === 0 && (
-                <Text
-                  type="danger"
-                  style={{ display: 'block', textAlign: 'center', marginTop: 10 }}
-                >
+                <Text type="danger" className="block text-center mt-2.5">
                   Você perdeu! Era: {data.nome}
                 </Text>
               )}
