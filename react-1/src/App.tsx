@@ -12,11 +12,11 @@ export default function App() {
           <PlayButton label="Iniciar Partida" onClick={() => setJogar(true)} />
           <span className="text-slate-400 mt-4 text-xs">
             Versão 1.0 - Powered by{" "}
-            <a href="https://github.com/ademirfolster" className="font-bold">
+            <a href="https://github.com/ademirfolster" alt="Ademir Git Hub" className="font-bold">
               Ademir Folster
             </a>{" "}
             &{" "}
-            <a href="https://github.com/valdemarnanon" className="font-bold">
+            <a href="https://github.com/valdemarnanon" alt="Valdemar Git Hub" className="font-bold">
               Valdemar Nanon
             </a>
           </span>
