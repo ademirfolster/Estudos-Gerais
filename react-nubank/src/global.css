@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-purple: #820ad1;
+  --color-purple-dark: #6b07b0;
+  --color-white: #ffffff;
+  --color-dark: #0b0014;
+  --color-gray: #6b6b6b;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    @apply bg-white text-gray-900;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+
+    transition: all 0.3s ease-in-out;
+  }
+}
