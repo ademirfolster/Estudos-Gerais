@@ -82,12 +82,9 @@ export default function Game({ jogar }: { jogar: (v: boolean) => void }) {
       >
         <Card className="rounded-xl">
           <Space direction="vertical" size="middle" className="w-full">
-            <h1 className="text-6xl font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-600 uppercase tracking-tighter drop-shadow-md">
-              LoL Guessr
-            </h1>
-            <p className="text-blue-300 tracking-[0.2em] font-normal uppercase text-sm mb-8">
+            <Title level={3} className="text-center">
               Adivinhe o Campeão
-            </p>
+            </Title>
 
             <div>
               <Text strong>Dica:</Text> <Text>{data.dica}</Text>

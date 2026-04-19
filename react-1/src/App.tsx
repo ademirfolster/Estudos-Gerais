@@ -9,14 +9,28 @@ export default function App() {
     <div className="flex flex-col items-center justify-center h-screen bg-slate-950 from-blue-900 via-slate-950 to-black">
       {!jogar && (
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 flex flex-col items-center shadow-2xl">
+          <h1 className="text-6xl font-black italic text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-600 uppercase drop-shadow-md">
+            LoL Guessr
+          </h1>
+          <p className="text-blue-300 tracking-[0.2em] font-normal uppercase text-sm mb-8">
+            Adivinhe o Campeão
+          </p>
           <PlayButton label="Iniciar Partida" onClick={() => setJogar(true)} />
           <span className="text-slate-400 mt-4 text-xs">
             Versão 1.0 - Powered by{" "}
-            <a href="https://github.com/ademirfolster" alt="Ademir Git Hub" className="font-bold">
+            <a
+              href="https://github.com/ademirfolster"
+              alt="Ademir Git Hub"
+              className="font-bold"
+            >
               Ademir Folster
             </a>{" "}
             &{" "}
-            <a href="https://github.com/valdemarnanon" alt="Valdemar Git Hub" className="font-bold">
+            <a
+              href="https://github.com/valdemarnanon"
+              alt="Valdemar Git Hub"
+              className="font-bold"
+            >
               Valdemar Nanon
             </a>
           </span>
