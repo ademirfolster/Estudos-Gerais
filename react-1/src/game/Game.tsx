@@ -73,15 +73,15 @@ export default function Game({ jogar }: { jogar: (v: boolean) => void }) {
   };
 
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center mt-10 w-100">
       <Form
         form={form}
-        layout="vertical"
         onFinish={onFinish}
-        style={{ width: 400 }}
+        className="w-full"
+        layout="vertical"
       >
         <Card className="rounded-xl">
-          <Space direction="vertical" size="middle" className="w-full">
+          <Space direction="vertical" size="middle">
             <Title level={3} className="text-center">
               Adivinhe o Campeão
             </Title>
@@ -89,7 +89,9 @@ export default function Game({ jogar }: { jogar: (v: boolean) => void }) {
             <div>
               <Text strong>Dica:</Text> <Text>{data.dica}</Text>
               <br />
-              <Text strong>Tentativas: {tentativas}</Text>
+              <Text strong className="w-full">
+                Tentativas: {tentativas}
+              </Text>
             </div>
 
             <Form.Item
@@ -134,11 +136,10 @@ export default function Game({ jogar }: { jogar: (v: boolean) => void }) {
                 </Text>
               )}
             </Form.Item>
-
-            <Button type="default" block onClick={() => jogar(false)}>
-              Voltar ao lobby
-            </Button>
           </Space>
+          <Button type="default" block onClick={() => jogar(false)}>
+            Voltar ao lobby
+          </Button>
         </Card>
       </Form>
     </div>
