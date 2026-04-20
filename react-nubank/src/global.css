@@ -16,14 +16,12 @@
   }
 
   body {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: antialiased;
     @apply bg-white text-gray-900;
   }
 
   a {
     @apply no-underline text-inherit;
-
-    transition: all 0.3s ease-in-out;
   }
 }
