@@ -1,5 +1,5 @@
-import fundoImg from "../../public/fundo.png";
-import { Button } from "./Button";
+import fundoImg from "../../../public/fundo.png";
+import { Button } from "../Button";
 
 export function Hero() {
   return (

@@ -1,5 +1,5 @@
-import logoImg from "../../public/logo.png";
-import { Button } from "./Button";
+import logoImg from "../../../public/logo.png";
+import { Button } from "../Button";
 
 export function Header() {
   const linksHeader = [
