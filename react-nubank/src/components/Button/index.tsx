@@ -8,7 +8,7 @@ export function Button({ label, variant = "primary", onClick }: ButtonProps) {
   const styles = {
     primary: "bg-purple-dark text-white rounded-4xl hover:bg-purple",
     secondary: "bg-purple text-white rounded-md hover:bg-purple-dark",
-    cta: "bg-white text-purple rounded-4xl hover:bg-gray-100",
+    cta: "bg-white text-purple rounded-4xl hover:scale-110 hover:shadow-md shadow-white",
   };
 
   return (

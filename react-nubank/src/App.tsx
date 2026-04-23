@@ -1,4 +1,11 @@
-import { Header, Hero, Services, CardSection } from "./components";
+import {
+  Header,
+  Hero,
+  Services,
+  CardSection,
+  CtaSection,
+  Footer,
+} from "./components";
 
 export default function App() {
   return (
@@ -7,6 +14,8 @@ export default function App() {
       <Hero />
       <Services />
       <CardSection />
+      <CtaSection />
+      <Footer />
     </>
   );
 }
